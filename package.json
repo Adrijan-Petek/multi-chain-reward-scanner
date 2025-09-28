@@ -9,6 +9,7 @@
     "dev": "node src/scan.js --watch"
   },
   "dependencies": {
+    "dotenv": "^17.2.2",
     "ethers": "^6.10.0",
     "node-fetch": "^3.3.2"
   }
