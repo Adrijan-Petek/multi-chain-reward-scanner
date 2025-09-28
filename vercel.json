@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "src/scan.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/scan", "dest": "/src/scan.js" }
+  ]
+}

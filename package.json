@@ -1,0 +1,15 @@
+{
+  "name": "multi-chain-reward-scanner",
+  "version": "1.0.0",
+  "description": "Multi-chain daily reward/event scanner (Base, Optimism, Arbitrum)",
+  "main": "src/scan.js",
+  "scripts": {
+    "scan:once": "node src/scan.js --once",
+    "start": "node src/scan.js",
+    "dev": "node src/scan.js --watch"
+  },
+  "dependencies": {
+    "ethers": "^6.10.0",
+    "node-fetch": "^3.4.1"
+  }
+}
