@@ -2,6 +2,7 @@
 
 **multi-chain-reward-scanner** is a lightweight daily monitoring tool for tracking reward‑related events across **Base**, **Optimism**, and **Arbitrum**. It automates scans using GitHub Actions, produces JSON reports, and can be deployed to Vercel for a simple dashboard experience. A realistic `.env.example` is provided for quick configuration.
 
+
 ---
 
 ## ✨ Features
