@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Chain Reward Scanner</title>
+    <meta
+      name="description"
+      content="Professional multi-chain reward scanner with automated reporting, webhook alerts, and scheduled scans."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <div class="glow glow-a"></div>
+      <div class="glow glow-b"></div>
+      <div class="glow glow-c"></div>
+    </div>
+
+    <main class="page">
+      <header class="hero">
+        <div class="hero-copy">
+          <span class="badge">Automated On-Chain Intelligence</span>
+          <h1>Multi-Chain Reward Scanner</h1>
+          <p>
+            Scan Base, Optimism, Arbitrum, and Moonbeam for reward activity with
+            scheduled automation, JSON reporting, and webhook delivery.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/Adrijan-Petek/multi-chain-reward-scanner">
+              View Repository
+            </a>
+            <a class="button ghost" href="#how">
+              How it works
+            </a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-top">
+            <div class="card-title">Daily Scan Summary</div>
+            <div class="chip">Last run: 09:00 UTC</div>
+          </div>
+          <div class="stat-grid">
+            <div class="stat">
+              <span>Chains</span>
+              <strong>4</strong>
+            </div>
+            <div class="stat">
+              <span>Contracts</span>
+              <strong>12</strong>
+            </div>
+            <div class="stat">
+              <span>Events</span>
+              <strong>38</strong>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 72%"></div>
+          </div>
+          <p class="muted">72% of tracked contracts emitted events in the last window.</p>
+        </div>
+      </header>
+
+      <section class="feature-grid">
+        <article class="feature">
+          <h3>Reliable Scheduling</h3>
+          <p>Automated daily runs via GitHub Actions, with artifact reports stored on every execution.</p>
+        </article>
+        <article class="feature">
+          <h3>Webhook Alerts</h3>
+          <p>Send results to Discord, Slack, or custom endpoints for instant visibility.</p>
+        </article>
+        <article class="feature">
+          <h3>Multi-Chain Coverage</h3>
+          <p>Track reward events across Base, Optimism, Arbitrum, and Moonbeam from a single config.</p>
+        </article>
+      </section>
+
+      <section id="how" class="how">
+        <h2>Workflow</h2>
+        <div class="timeline">
+          <div class="step">
+            <span>01</span>
+            <div>
+              <h4>Configure RPCs + contracts</h4>
+              <p>Set chain RPC endpoints and reward contract lists in your `.env` file.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>02</span>
+            <div>
+              <h4>Run scans on schedule</h4>
+              <p>GitHub Actions triggers daily scans and uploads JSON reports automatically.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>03</span>
+            <div>
+              <h4>Notify your team</h4>
+              <p>Post reports to webhooks for instant alerts or downstream automation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div>
+          <h2>Launch your scanner in minutes.</h2>
+          <p>Clone the repo, add RPC URLs, and ship automated reward scans today.</p>
+        </div>
+        <a class="button primary" href="https://github.com/Adrijan-Petek/multi-chain-reward-scanner">
+          Get Started
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

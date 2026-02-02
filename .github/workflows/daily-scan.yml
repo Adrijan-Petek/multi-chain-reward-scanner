@@ -16,7 +16,8 @@ jobs:
       - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
+          cache: "npm"
 
       - name: Install deps
         run: npm ci
@@ -26,7 +27,10 @@ jobs:
           BASE_RPC: ${{ secrets.BASE_RPC }}
           OP_RPC: ${{ secrets.OP_RPC }}
           ARBITRUM_RPC: ${{ secrets.ARBITRUM_RPC }}
-          REWARD_CONTRACTS: ${{ secrets.REWARD_CONTRACTS }}
+          REWARD_CONTRACTS_BASE: ${{ secrets.REWARD_CONTRACTS_BASE }}
+          REWARD_CONTRACTS_OPTIMISM: ${{ secrets.REWARD_CONTRACTS_OPTIMISM }}
+          REWARD_CONTRACTS_ARBITRUM: ${{ secrets.REWARD_CONTRACTS_ARBITRUM }}
+          REWARD_CONTRACTS_MOONBEAM: ${{ secrets.REWARD_CONTRACTS_MOONBEAM }}
           SCAN_BLOCK_WINDOW: ${{ secrets.SCAN_BLOCK_WINDOW }}
           SCAN_WEBHOOK_URL: ${{ secrets.SCAN_WEBHOOK_URL }}
         run: |

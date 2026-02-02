@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Multi-chain daily reward/event scanner (Base, Optimism, Arbitrum)",
   "main": "src/scan.js",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "scan:once": "node src/scan.js --once",
+    "scan:dry": "node src/scan.js --once --offline --print",
     "start": "node src/scan.js",
     "dev": "node src/scan.js --watch"
   },
